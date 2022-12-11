@@ -35,4 +35,4 @@ jobs:
         users: actions/checkout@v3
       
       - name: Deploy to Render
-        run: curl ${{RENDER_DEPLOY_HOOK}}
+        run: curl ${{secrets.RENDER_DEPLOY_HOOK}}
